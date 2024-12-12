@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Enver Álvarez",
+        "username": "ealvarez",
+        "email": "enver.alvarez@example.com",
+        "address": {
+            "street": "Av. Siempre Viva 123",
+            "city": "Quito",
+            "zipcode": "593"
+        },
+        "phone": "555-1234",
+        "company": {
+            "name": "Tech Innovators",
+            "catchPhrase": "Transformando ideas en realidad"
+        }
+    },
+    {
+        "id": 2,
+        "name": "María González",
+        "username": "mariag",
+        "email": "maria.gonzalez@example.com",
+        "address": {
+            "street": "Calle Principal 456",
+            "city": "Guaranda",
+            "zipcode": "44100"
+        },
+        "phone": "555-5678",
+        "company": {
+            "name": "Digital Solutions",
+            "catchPhrase": "Innovación a tu alcance"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Carlos Rodríguez",
+        "username": "carlosr",
+        "email": "carlos.rodriguez@example.com",
+        "address": {
+            "street": "Paseo de la Reforma 789",
+            "city": "Guayaquil",
+            "zipcode": "06500"
+        },
+        "phone": "555-9012",
+        "company": {
+            "name": "Global Systems",
+            "catchPhrase": "Soluciones integrales"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Ana Martínez",
+        "username": "anam",
+        "email": "ana.martinez@example.com",
+        "address": {
+            "street": "Avenida Universitaria 234",
+            "city": "Montecristi",
+            "zipcode": "64000"
+        },
+        "phone": "555-3456",
+        "company": {
+            "name": "Innovative Labs",
+            "catchPhrase": "Creatividad sin límites"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Luis Torres",
+        "username": "luist",
+        "email": "luis.torres@example.com",
+        "address": {
+            "street": "Boulevard Agua Caliente 567",
+            "city": "Zamora",
+            "zipcode": "22010"
+        },
+        "phone": "555-7890",
+        "company": {
+            "name": "Smart Technologies",
+            "catchPhrase": "Tecnología al servicio de las personas"
+        }
+    }
+]

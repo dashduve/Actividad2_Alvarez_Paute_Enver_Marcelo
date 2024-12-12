@@ -1,0 +1,184 @@
+/* Reset básico y estilos globales */
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Definición de variables de color */
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-success: #28a745;
+    --color-danger: #dc3545;
+    --color-warning: #ffc107;
+    --color-info: #17a2b8;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+
+    /* Variables de tipografía */
+    --font-family-base: 'Arial', 'Helvetica', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+
+    /* Variables de espaciado */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 1.5rem;
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para enlaces */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+/* Estilos para botones */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--color-primary), 10%);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: darken(var(--color-secondary), 10%);
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: var(--spacing-small);
+}
+
+.mt-2 {
+    margin-top: var(--spacing-medium);
+}
+
+.mt-3 {
+    margin-top: var(--spacing-large);
+}
+
+.mb-1 {
+    margin-bottom: var(--spacing-small);
+}
+
+.mb-2 {
+    margin-bottom: var(--spacing-medium);
+}
+
+.mb-3 {
+    margin-bottom: var(--spacing-large);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 14px;
+    }
+
+    body {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Animaciones básicas */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Clases de utilidad para flexbox */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Estilos de contenedor */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+}
+
+/* Estilos para formularios */
+input, 
+textarea, 
+select {
+    width: 100%;
+    padding: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+    border: 1px solid var(--color-secondary);
+    border-radius: 0.25rem;
+}
+
+/* Modo oscuro simple */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-dark);
+        color: var(--color-light);
+    }
+
+    a {
+        color: var(--color-info);
+    }
+}
